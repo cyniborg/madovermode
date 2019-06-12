@@ -122,8 +122,10 @@ h6 {
 
 html,
 body {
-  width: 100vw;
   width: 100%;
+  width: 100vw;
+  min-height: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -139,6 +141,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 .product-listing,
@@ -248,13 +251,14 @@ body {
   margin: 1.6em 0;
 }
 
-a.btn-link{
+a.btn-link {
   text-decoration: none;
   display: inline-block;
   text-align: center;
 }
 
-.buttons button, .btn-link {
+.buttons button,
+.btn-link {
   background: none;
   border: 2px solid var(--sec-colour);
   border-radius: 0.3em;
@@ -266,7 +270,8 @@ a.btn-link{
   cursor: pointer;
 }
 
-.buttons button:hover, .btn-link:hover {
+.buttons button:hover,
+.btn-link:hover {
   background: var(--sec-colour);
   color: white;
   transition: all 0.2s ease-out;
@@ -353,7 +358,7 @@ td {
 }
 
 
-.e-form-container{
+.e-form-container {
   width: 350px;
   font-size: 10px;
   min-height: 100%;
@@ -373,10 +378,66 @@ td {
   margin: 0.5em 0;
 }
 
-.e-form input, .e-form textarea {
+.e-form input,
+.e-form textarea {
   margin: 0.4em 0;
 }
 
+.enquiry-list-container {
+  position: absolute;
+  right: 0;
+  width: 560px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid var(--sec-colour);
+  padding: 1em;
+  background-color: white;
+
+}
+
+.enquiry-list {
+  position: relative;
+}
+
+.enquiry-select {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px dotted var(--primary-colour);
+  margin-bottom: 0.5em;
+}
+
+.el-image img {
+  width: 140px;
+  margin: 0 auto;
+  display: block;
+}
+
+.enquiry-content {
+  font-size: 1.6em;
+  line-height: 0.5;
+  text-align: center;
+}
+
+.el-footer {
+  position: fixed;
+  bottom: 0;
+  right: 3px;
+  width: 550px;
+  height: 45px;
+  padding: 1em;
+  background-color: ghostwhite;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.el-content {
+  display: flex;
+  justify-content: space-around;
+}
 
 
 
