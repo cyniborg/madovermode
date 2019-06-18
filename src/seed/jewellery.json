@@ -1,0 +1,117 @@
+[{
+    "id": "001",
+    "title": "A beautiful ring",
+    "metal": [{
+      "type": "Silver",
+      "weight": "3gms",
+      "purity": "92.5%"
+
+    }],
+    "stones": [{
+      "name": "Cubic Zirconia",
+      "weight": "3 carat",
+      "sizes": ["2.5mm", "4mm"]
+
+
+    }],
+
+    "size": "20 x 40 mm",
+    "weight": "3.5 gms",
+    "img": [{
+        "primary": true,
+        "src": "/img/ring-1.jpg"
+      },
+      {
+        "primary": false,
+        "src": "/img/ring-1-2.jpg"
+      },
+      {
+        "primary": false,
+        "src": "/img/ring-1-1.jpg"
+      }
+    ],
+
+    "datePublished": "15 Jun 2019",
+    "dateModified": "15 Jun 2019",
+    "category": "ring"
+
+  },
+
+  {
+    "id": "002",
+    "title": "A beautiful pendant",
+    "metal": [{
+      "type": "Silver",
+      "weight": "3gms",
+      "purity": "92.5%"
+
+    }],
+    "stones": [{
+      "name": "Cubic Zirconia",
+      "weight": "3 carat",
+      "sizes": ["2.5mm", "4mm"]
+
+
+    }],
+
+    "size": "20 x 40 mm",
+    "weight": "3.5 gms",
+    "img": [{
+        "primary": true,
+        "src": "/img/pendant-1.jpg"
+      },
+      {
+        "primary": false,
+        "src": "/img/pendant-1-2.jpg"
+      },
+      {
+        "primary": false,
+        "src": "/img/pendant-1-1.jpg"
+      }
+    ],
+
+    "datePublished": "15 Jun 2019",
+    "dateModified": "15 Jun 2019",
+    "category": "pendant"
+
+  },
+
+  {
+    "id": "003",
+    "title": "A beautiful earring",
+    "metal": [{
+      "type": "Silver",
+      "weight": "3gms",
+      "purity": "92.5%"
+
+    }],
+    "stones": [{
+      "name": "Cubic Zirconia",
+      "weight": "3 carat",
+      "sizes": ["2.5mm", "4mm"]
+
+
+    }],
+
+    "size": "20 x 40 mm",
+    "weight": "3.5 gms",
+    "img": [{
+        "primary": true,
+        "src": "/img/earring-1.jpg"
+      },
+      {
+        "primary": false,
+        "src": "/img/earring-1-2.jpg"
+      },
+      {
+        "primary": false,
+        "src": "/img/earring-1-1.jpg"
+      }
+    ],
+
+    "datePublished": "15 Jun 2019",
+    "dateModified": "15 Jun 2019",
+    "category": "earring"
+
+  }
+]
