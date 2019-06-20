@@ -1,15 +1,36 @@
-import React from 'react'
-import ProductImage from './ProductImage'
-import ProductContent from './ProductContent'
+import React, {Component} from 'react';
+import ProductListing from './ProductListing';
+import fetchJewelleryAction from './fetchJewellery';
+import Loader from './../Loader';
 
+import {connect} from 'react-redux';
 
-export default function Home() {
-    return (
-        <div className="product-listing">
+class Home extends Component {
+    
+    componentDidMount() {
+        if (this.props.jewellery.length<1) {
+            const {fetchJewellery} = this.props;
+            fetchJewellery();
+            
+        }
+    }
 
-            <ProductImage source = {"/img/ring-1-2.jpg"} />
-            <ProductContent />
-
-        </div>
-    )
+    render() {
+        return (
+            <React.Fragment>
+                {this.props.isFetching ? <Loader /> : <ProductListing product = {this.props.jewellery} fromRouter = {this.props.fromRouter} />}
+            </React.Fragment>
+        )
+    }
 }
+
+const mapStateToProps = (state, ownProp) => ({
+    jewellery: state.home.jewellery,
+    isFetching: state.home.isFetching,
+    fromRouter: ownProp.fromRouter
+});
+const mapDispatchToProps = (dispatch) => ({
+    fetchJewellery: () => dispatch(fetchJewelleryAction())
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

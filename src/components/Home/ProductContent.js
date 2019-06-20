@@ -1,25 +1,24 @@
 import React from 'react';
-
-import {Link} from 'react-router-dom';
+import AddToEnquiryButton from '../AddToEnquiryButton';
+import DetailButton from '../DetailButton';
 
 export default function ProductContent(props) {
     return (
         <div className="p-content col-25">
-            <h2>A Beautiful Ring</h2>
+            <h2>{props.data.title}</h2>
             <p>
-                <span className="p-desc">Metal</span>: Silver |
+                <span className="p-desc">Metal</span>: {props.data.metal}&nbsp;|&nbsp;
                 <span className="p-desc">
-                    Stones</span>: Zirconia |
+                    Stones</span>: {props.data.stones}&nbsp;|&nbsp;
                 <span className="p-desc">
-                    Weight</span>: 3.06gm
+                    Weight</span>: {`${props.data.totalWeight}gm`}
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fuga iure
-                quasi possimus harum consequatur quam beatae a, rem rerum porro error itaque
-                sunt eaque, minima ipsum unde. Laudantium, ullam.</p>
+            <p> {props.data.description} </p>
 
             <div className="buttons">
-                <Link className="btn-link" to="/">Add to enquiry list</Link>
-                <Link className="btn-link" to="/jewellery/a-beautiful-ring">Details</Link>
+                <AddToEnquiryButton />
+                <DetailButton productId = {props.data.id} title = {props.data.title} fromRouter = {props.fromRouter} />
+                
             </div>
         </div>
     )

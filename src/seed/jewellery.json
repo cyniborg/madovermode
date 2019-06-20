@@ -1,117 +1,61 @@
-[{
-    "id": "001",
-    "title": "A beautiful ring",
-    "metal": [{
-      "type": "Silver",
-      "weight": "3gms",
-      "purity": "92.5%"
-
-    }],
-    "stones": [{
-      "name": "Cubic Zirconia",
-      "weight": "3 carat",
-      "sizes": ["2.5mm", "4mm"]
-
-
-    }],
-
-    "size": "20 x 40 mm",
-    "weight": "3.5 gms",
-    "img": [{
-        "primary": true,
-        "src": "/img/ring-1.jpg"
-      },
-      {
-        "primary": false,
-        "src": "/img/ring-1-2.jpg"
-      },
-      {
-        "primary": false,
-        "src": "/img/ring-1-1.jpg"
-      }
-    ],
-
-    "datePublished": "15 Jun 2019",
-    "dateModified": "15 Jun 2019",
-    "category": "ring"
-
-  },
-
-  {
-    "id": "002",
-    "title": "A beautiful pendant",
-    "metal": [{
-      "type": "Silver",
-      "weight": "3gms",
-      "purity": "92.5%"
-
-    }],
-    "stones": [{
-      "name": "Cubic Zirconia",
-      "weight": "3 carat",
-      "sizes": ["2.5mm", "4mm"]
-
-
-    }],
-
-    "size": "20 x 40 mm",
-    "weight": "3.5 gms",
-    "img": [{
-        "primary": true,
-        "src": "/img/pendant-1.jpg"
-      },
-      {
-        "primary": false,
-        "src": "/img/pendant-1-2.jpg"
-      },
-      {
-        "primary": false,
-        "src": "/img/pendant-1-1.jpg"
-      }
-    ],
-
-    "datePublished": "15 Jun 2019",
-    "dateModified": "15 Jun 2019",
-    "category": "pendant"
-
-  },
-
-  {
-    "id": "003",
-    "title": "A beautiful earring",
-    "metal": [{
-      "type": "Silver",
-      "weight": "3gms",
-      "purity": "92.5%"
-
-    }],
-    "stones": [{
-      "name": "Cubic Zirconia",
-      "weight": "3 carat",
-      "sizes": ["2.5mm", "4mm"]
-
-
-    }],
-
-    "size": "20 x 40 mm",
-    "weight": "3.5 gms",
-    "img": [{
-        "primary": true,
-        "src": "/img/earring-1.jpg"
-      },
-      {
-        "primary": false,
-        "src": "/img/earring-1-2.jpg"
-      },
-      {
-        "primary": false,
-        "src": "/img/earring-1-1.jpg"
-      }
-    ],
-
-    "datePublished": "15 Jun 2019",
-    "dateModified": "15 Jun 2019",
-    "category": "earring"
-
+{
+  "jewellery": [
+    {
+      "id": "001",
+      "title": "A beautiful ring",
+      "datePublished": "15 Jun 2019",
+      "dateModified": "15 jun 2019",
+      "category": "01",
+      "pImg": "/img/ring-1.png",
+      "sImg-1": "/img/ring-1-2.png",
+      "sImg-2": "/img/ring-1-3.png"
+    }
+  ],
+  "stones": {
+    "01": "Diamonds",
+    "02": "Yellow Sapphire",
+    "03": "Blue Sapphire",
+    "04": "Amethyst"
+    },
+  "stoneDetail":[
+    {
+      "id": "001",
+      "type": "01",
+      "weight": "3",
+      "sizeL": "3",
+      "sizeB": "6",
+      "shape": "Baguette",
+      "jid": "001"
+    },
+    {
+      "id": "002",
+      "type": "01",
+      "weight": "3",
+      "sizeL": "3",
+      "sizeB": "6",
+      "shape": "Baguette",
+      "jid": "002"
+    },{
+      "id": "003",
+      "type": "02",
+      "weight": "3",
+      "sizeL": "3",
+      "sizeB": "6",
+      "shape": "Baguette",
+      "jid": "002"
+    },{
+      "id": "004",
+      "type": "04",
+      "weight": "3",
+      "sizeL": "3",
+      "sizeB": "6",
+      "shape": "Baguette",
+      "jid": "003"
+    }
+  ],
+  "category": {
+    "01": "earring",
+    "02": "ring",
+    "03": "pendant"
   }
-]
+}
